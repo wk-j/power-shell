@@ -2,7 +2,7 @@
 
 ```bash
 brew cask install powershell
-pwsh
 
-Get-PackageProvider -ListAvailable
+pwsh -c "[System.Net.NetworkInformation.NetworkInterface]::GetIsNetworkAvailable()"
+pwsh -c "[System.Net.NetworkInformation.NetworkInterface]::GetAllNetworkInterfaces()"
 ```
